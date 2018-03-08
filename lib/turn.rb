@@ -4,8 +4,8 @@ def turn(board)
   input = input_to_index(input)
   if !valid_move(board, input)
     puts "la la la"
-  else 
-    turn(board) 
+  else
+    turn(board)
   end
 end
 
