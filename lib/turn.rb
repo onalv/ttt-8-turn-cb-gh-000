@@ -3,7 +3,7 @@ def turn(board)
   input = gets.to_i
   input = input_to_index(input)
   if valid_move?(board, input)
-    move(board, input, character = "X")
+    move(board, input, character)
     display_board(board)
   else
     turn(board)
