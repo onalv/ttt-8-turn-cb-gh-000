@@ -1,5 +1,6 @@
 def turn(board)
   puts "Please enter 1-9:"
+  input = gets.to_i
 end
 
 def display_board(board)
