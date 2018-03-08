@@ -6,8 +6,14 @@ def display_board
 
 end
 
-def valid_move?
-
+def valid_move?(board, position)
+  if position.between?(0,8)
+    if !position_taken?(board, position)
+      return true
+    end
+  else 
+    return false
+  end
 end
 
 def display_board(board)
