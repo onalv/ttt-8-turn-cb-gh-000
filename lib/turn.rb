@@ -2,8 +2,12 @@ def turn
 
 end
 
-def display_board
-
+def display_board(board)
+  puts " #{board[0]} | #{board[1]} | #{board[2]} "
+  puts "-----------"
+  puts " #{board[3]} | #{board[4]} | #{board[5]} "
+  puts "-----------"
+  puts " #{board[6]} | #{board[7]} | #{board[8]} "
 end
 
 def valid_move?(board, position)
@@ -11,17 +15,9 @@ def valid_move?(board, position)
     if !position_taken?(board, position)
       return true
     end
-  else 
+  else
     return false
   end
-end
-
-def display_board(board)
-  puts " #{board[0]} | #{board[1]} | #{board[2]} "
-  puts "-----------"
-  puts " #{board[3]} | #{board[4]} | #{board[5]} "
-  puts "-----------"
-  puts " #{board[6]} | #{board[7]} | #{board[8]} "
 end
 
 def input_to_index(position)
